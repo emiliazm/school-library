@@ -1,62 +1,47 @@
+# decode_morse_ruby
+This is an exercise to solve the morse code encoding in ruby.
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Project Name
-
-> Description the project.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Setting up this project locally:
+#### On your terminal:
+- Clone this repository to your computer: git clone github.com/emiliazm/decode_morse_ruby
+- Open the project on your code editor: "cd school_library" and "code ."
+- Write: budle install
+- irb
 
+## Prerequisites
 
-To get a local copy up and running follow these simple example steps.
+### General requirements
+- Make sure that there are [no linter errors](https://github.com/microverseinc/linters-config).
+- Make sure that you used correct [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/gitflow.md).
+- Make sure that you documented your work [in a professional way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/professional_repo_rules.md).
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+### Ruby requirements
+- Follow our list of [best practices for Ruby](https://github.com/microverseinc/curriculum-ruby/blob/main/articles/ruby_best_practices.md).
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Emilia Zambrano**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@emiliazm](https://github.com/emiliazm)
+- Twitter: [@emilia_zm](https://twitter.com/emilia_zm)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emilia-zambrano-montero-aa30a611b/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Trictonicmp/decode_morse_ruby/issues).
 
 ## Show your support
 
@@ -64,10 +49,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse README template.
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+- This project is [MIT](./MIT.md) licensed.
