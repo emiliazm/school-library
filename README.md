@@ -1,7 +1,5 @@
-# decode_morse_ruby
-This is an exercise to solve the morse code encoding in ruby.
-
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# School library
+This is a School Library project.
 
 
 ## Built With
