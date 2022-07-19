@@ -12,7 +12,5 @@ class Student < Person
     "¯\(ツ)/¯"
   end
 
-  def classroom=(classroom)
-    @classroom = classroom
-  end
+  attr_writer :classroom
 end

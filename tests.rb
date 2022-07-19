@@ -12,15 +12,14 @@ require_relative 'classroom'
 # capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
 # capitalized_trimmed_person.correct_name
 
-classroom = Classroom.new("Math")
+classroom = Classroom.new('Math')
 classroom.label
 
-student1 = Student.new(20, classroom, "Emilia")
-student2 = Student.new(10, classroom, "juan")
+student1 = Student.new(20, classroom, 'Emilia')
+student2 = Student.new(10, classroom, 'juan')
 
 classroom.add_student(student1)
 
 puts student1.classroom
 puts student2.classroom
 puts classroom.students
-
