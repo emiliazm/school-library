@@ -11,6 +11,4 @@ class Student < Person
   def play_hooky?
     "¯\(ツ)/¯"
   end
-
-  attr_writer :classroom
 end
