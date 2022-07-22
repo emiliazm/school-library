@@ -8,7 +8,7 @@ class App
   attr_accessor :books, :people, :rentals, :classroom
 
   def initialize
-    @books = []
+    @book = []
     @people = []
     @rentals = []
     @classroom = Classroom.new('Math')
