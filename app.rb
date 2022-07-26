@@ -13,7 +13,7 @@ class App
   def initialize
     @books = read_books
     @people = read_people
-    @rentals = []
+    @rentals = read_rentals(@books, @people)
     @classroom = Classroom.new('Math')
   end
 

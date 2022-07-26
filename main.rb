@@ -43,16 +43,18 @@ class Main
     loop do
       display_list
       option = gets.chomp.to_i
-      save_data
+
       break if option == 7
 
       execute_option(option)
     end
+    save_data
   end
 
   def save_data
     save_books(@app.books)
     save_people(@app.people)
+    save_rentals(@app.rentals)
   end
 
   def main
