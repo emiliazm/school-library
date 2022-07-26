@@ -52,6 +52,7 @@ class Main
 
   def save_data
     save_books(@app.books)
+    save_people(@app.people)
   end
 
   def main
