@@ -48,7 +48,8 @@ module DataStorage
         data.push({ id: person.id, age: person.age, name: person.name, specialization: person.specialization,
                     data_type: person.class })
       else
-        data.push({ id: person.id, age: person.age, classroom: nil, name: person.name, parent_permission: person.parent_permission,
+        data.push({ id: person.id, age: person.age, classroom: nil, name: person.name,
+                    parent_permission: person.parent_permission,
                     data_type: person.class })
       end
       File.write('people.json', JSON.generate(data))
