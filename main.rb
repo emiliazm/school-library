@@ -1,6 +1,9 @@
 require_relative 'app'
+require_relative 'storage'
 
 class Main
+  include DataStorage
+
   def initialize
     @app = App.new
   end
@@ -40,10 +43,15 @@ class Main
     loop do
       display_list
       option = gets.chomp.to_i
+      save_data
       break if option == 7
 
       execute_option(option)
     end
+  end
+
+  def save_data
+    save_books(@app.books)
   end
 
   def main
