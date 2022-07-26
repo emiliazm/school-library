@@ -3,12 +3,15 @@ require_relative 'teacher'
 require_relative 'book'
 require_relative 'rental'
 require_relative 'classroom'
+require_relative 'storage'
 
 class App
   attr_accessor :books, :people, :rentals, :classroom
 
+  include DataStorage
+
   def initialize
-    @books = []
+    @books = read_books
     @people = []
     @rentals = []
     @classroom = Classroom.new('Math')
@@ -93,20 +96,20 @@ class App
 
   def create_rental()
     puts 'Select a book from the following list by number: '
-    books.each_with_index do |book, index|
+    @books.each_with_index do |book, index|
       puts "#{index}) Title: #{book.title} Author: #{book.author}"
     end
-    book_index = input('Write a valid number ', (0...books.length))
+    book_index = input('Write a valid number ', (0...@books.length))
 
     puts 'Select a person from the following list by number (not id): '
-    people.each_with_index do |person, index|
+    @people.each_with_index do |person, index|
       puts "#{index}) [#{person.class.name}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
-    person_index = input('Write a valid number ', (0...people.length))
+    person_index = input('Write a valid number ', (0...@people.length))
 
     print 'Date: '
     date = gets.chomp
-    rentals.push(Rental.new(date, people[person_index], books[book_index]))
+    rentals.push(Rental.new(date, @people[person_index], @books[book_index]))
     puts 'Rental created successfully.'
   end
 
