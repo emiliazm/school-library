@@ -2,7 +2,7 @@ require_relative './../classroom'
 require_relative './../student'
 
 describe Classroom do
-  context "When creating a new classroom" do
+  context 'When creating a new classroom' do
     classroom = Classroom.new('Math')
 
     classroom_label = classroom.label
@@ -12,7 +12,7 @@ describe Classroom do
     end
   end
 
-  context "When adding students to a classroom" do
+  context 'When adding students to a classroom' do
     classroom = Classroom.new('Math')
     students = [
       Student.new(12, 'Math', 'Emilia', parent_permission: true, id: 1)
@@ -22,7 +22,6 @@ describe Classroom do
 
     classroom_label = classroom.label
     student_name = classroom.students[0].name
-    
 
     it 'A new student should be added' do
       expect(student_name).to eql('Emilia')
@@ -34,7 +33,4 @@ describe Classroom do
       expect(student_in_classroom).to eql(classroom)
     end
   end
-
 end
-
-    
