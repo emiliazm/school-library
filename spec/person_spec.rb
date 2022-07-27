@@ -5,9 +5,11 @@ describe 'Person Tests' do
     it 'Person has the correct Info' do
     name='Elio Cortes'
     age= 45
-    person=Person.new(age, name)
+    parent_permission = true
+    person=Person.new(age, name, parent_permission: true)
     expect(person.name).to eq(name)
     expect(person.age).to eq(age)
+    expect(person.parent_permission).to eq(true)
     end
   end
 end
