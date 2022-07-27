@@ -20,7 +20,6 @@ describe Classroom do
 
     classroom.add_student(students[0])
 
-    classroom_label = classroom.label
     student_name = classroom.students[0].name
 
     it 'A new student should be added' do

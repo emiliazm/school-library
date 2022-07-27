@@ -5,12 +5,8 @@ require_relative './../book'
 describe Rental do
   context 'When creating a new rental' do
     book = Book.new('Game of Thrones', 'George')
-    book_title = book.title
-    book_author = book.author
 
     person = Person.new(55, 'Emilia', parent_permission: true)
-    person_age = person.age
-    person_name = person.name
 
     rental = Rental.new('2020-01-01', person, book)
     rental_date = rental.date
