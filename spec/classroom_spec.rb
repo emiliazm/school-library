@@ -1,31 +1,37 @@
-require_relative '../classroom'
-require_relative '../student'
+require_relative './../classroom'
+require_relative './../student'
 
 describe Classroom do
   context "When creating a new classroom" do
     classroom = Classroom.new('Math')
 
-    classroom_label = classroom.classroom_label
+    classroom_label = classroom.label
 
     it 'Classroom labe should be "Math"' do
       expect(classroom_label).to eql('Math')
     end
   end
 
-  context "When adding students to a clasroom" do
+  context "When adding students to a classroom" do
     classroom = Classroom.new('Math')
-    student = Student.new(12, 'Math', 'Emilia', parent_permission: true, id: 1)
+    students = [
+      Student.new(12, 'Math', 'Emilia', parent_permission: true, id: 1)
+    ]
 
-    classroom_label = classroom.classroom_label
-    student_name = classroom.student.name
-    student_in_classrrom = student.clasroom
+    classroom.add_student(students[0])
+
+    classroom_label = classroom.label
+    student_name = classroom.students[0].name
+    
 
     it 'A new student should be added' do
-      expect(classroom_name).to eql('Emilia')
+      expect(student_name).to eql('Emilia')
     end
 
+    student_in_classroom = students[0].classroom
+
     it 'Student should belong to "Math" classroom' do
-      expect(student_in_classrrom).to eql(clasroom)
+      expect(student_in_classroom).to eql(classroom)
     end
   end
 
